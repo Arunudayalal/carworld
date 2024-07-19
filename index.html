@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(211, 199, 180);
+        }
+
+        .row1 {
+         width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 3%;
+    
+        
+        }
+        .colo{
+            width: 33%;
+        }
+        .remove{
+          
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center">CAR WORLD</h1>
+    </div>
+
+    <div class="row w-100 row1">
+        <div class="col-4 border border-success border-2 col1 text-center  colo ">
+            <h4>Car Details</h4>
+            <label for="exampleFormControlInput1" class="form-label">Car Brand</label>
+            <input type="text" class="form-control" id="carbrand" placeholder="">
+            <label for="exampleFormControlInput1" class="form-label">Price</label>
+
+            <input type="text" class="form-control" id="price" placeholder="">
+            <label for="exampleFormControlInput1" class="form-label">Key</label>
+            <input type="text" class="form-control" id="key" placeholder="">
+            <button type="button" class="btn btn-success mt-2" onclick="store()" >Store Item</button>
+        </div>
+        <div class="col-4 border border-success border-2 text-center colo ">
+            <h4>Enter Key To Retrieve Item</h4>
+            <label for="exampleFormControlInput1" class="form-label">Key</label>
+            <input type="email" class="form-control" id="kvalue" placeholder="">
+
+            <button type="button" class="btn btn-primary mt-2" onclick="search()">Retrive Records</button>
+        </div>
+    
+    <div class="col-4 border border-success border-2 text-center  colo">
+        <h4>Enter Key To Remove Item</h4>
+        <label for="exampleFormControlInput1" class="form-label">Key</label>
+        <input type="email" class="form-control" id="kvalue2" placeholder="">
+        <button type="button" class="btn btn-danger mt-2" onclick="remove()">Remove Records</button>
+    </div>
+    </div>
+
+    <div class="w-100  d-flex ">
+        <div class="col-3"></div>
+        <div class="col-8">  <button type="button" class="btn btn-danger mt-2 text-center w-75 remove " onclick="removeall()">Remove Records</button></div>
+        <div class="col-1"></div>
+      
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
